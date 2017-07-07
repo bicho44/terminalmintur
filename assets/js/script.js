@@ -1,26 +1,25 @@
-// @codekit-prepend "transition.js", "carousel.js", "collapse.js", "dropdown.js", "../../js/skip-link-focus-fix.js"
-//"modal.js", "vendor/owl.carousel.min.js"
+// @codekit-prepend "transition.js", "carousel.js", "collapse.js", "dropdown.js", "../../js/skip-link-focus-fix.js","modal.js", "vendor/owl.carousel.min.js"
 
 //(function(){
   //  $(".video-programa").fitVids();
 //}());
 
-(function(){
-    //caches a jQuery object containing the header element
-    var navbar = $(".navbar-default");
+// (function(){
+//     //caches a jQuery object containing the header element
+//     var navbar = $(".navbar-default");
 
-    $(window).scroll(function() {
+//     $(window).scroll(function() {
 
-        var scroll = $(window).scrollTop();
+//         var scroll = $(window).scrollTop();
 
-        if (scroll >= navbar.outerHeight(true)+15) {
-            navbar.addClass("slideInDown navbar-fixed-top");
-        } else {
-            navbar.removeClass("slideInDown navbar-fixed-top");
-        }
+//         if (scroll >= navbar.outerHeight(true)+15) {
+//             navbar.addClass("slideInDown navbar-fixed-top");
+//         } else {
+//             navbar.removeClass("slideInDown navbar-fixed-top");
+//         }
         
-    });
-}());
+//     });
+// }());
 
 
 (function(){
