@@ -1,7 +1,6 @@
 # Terminal de AutoServicio
-===
 ## Ministerio de Turismo de Río Negro Theme
-==
+
 
 Diseño para la terminal de de autoservicio en el Cerro Catedral para el *Ministerio de Turismo de Río Negro*
 
