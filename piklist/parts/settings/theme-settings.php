@@ -1,9 +1,9 @@
 <?php
 /*
-Title: Vision Options
+Title: Theme Options
 Setting: opciones_imgd
-Tab: Vision Home Page
-Flow: Opciones Vision
+Tab: Theme Home Page
+Flow: Opciones Theme
 
 */
 
@@ -23,6 +23,10 @@ Flow: Opciones Vision
 );
 
 */
+
+
+
+/*
 piklist (
     'field',
     array(
@@ -60,7 +64,7 @@ piklist(
                 'class' => 'regular-text'
         )
     )
-);
+);*/
 
 piklist (
     'field',
@@ -168,40 +172,21 @@ piklist (
     array(
         'type' => 'radio',
         'scope' => 'post_meta',
-        'field' => 'imgd_desta_news',
-        'label' => __('News Destacadas en la Home Page', 'imgd'),
+        'field' => 'imgd_slider_full',
+        'label' => __('Full Size Slider', 'imgd'),
+        'description' => __('El SlideShow es Full Screen?', 'imgd'),
         'value' => 0,
         'attributes' => array(
             'class' => 'radio'
-        ),
-        'choices' => array(
+        )
+        ,'choices' => array(
             0 => __('No', 'imgd'),
             1 => __('Si', 'imgd')
-        ),
-        'position' => 'wrap'
+        )
+        , 'position' => 'wrap'
+        
     )
 );
-
-piklist(
-    'field', 
-    array(
-        'type' => 'text'
-        ,'field' => 'imgd_desta_news_cant'
-        ,'description' => __('Cuantas Noticias en el Home', 'imgd')
-        ,'value' => '4'
-        ,'label' => __('Cantidad', 'imgd')
-        , 'conditions' => array(
-                    array(
-                        'field' => 'imgd_desta_news'
-                        , 'value' => 1
-                    )
-                )
-        ,'attributes' => array(
-                'class' => 'small-text'
-        )       
-    )
-);
-
 
 piklist (
     'field',
@@ -248,6 +233,7 @@ piklist(
     )
 );
 
+/* 
 piklist (
     'field',
     array(
@@ -266,3 +252,43 @@ piklist (
         'position' => 'wrap'
     )
 );
+*/
+
+piklist (
+    'field',
+    array(
+        'type' => 'radio',
+        'scope' => 'post_meta',
+        'field' => 'imgd_goto_top',
+        'label' => __('Muestra el GotoTop?', 'imgd'),
+        'value' => 0,
+        'attributes' => array(
+            'class' => 'radio'
+        ),
+        'choices' => array(
+            0 => __('No', 'imgd'),
+            1 => __('Si', 'imgd')
+        ),
+        'position' => 'wrap'
+    )
+);
+
+piklist('field', array(
+    'type' => 'file'
+    ,'field' => 'imgd_image_to_top'
+    ,'label' => __('Imagen del Goto top', 'imgd')
+    ,'options' => array(
+      'basic' => true
+    )
+    , 'conditions' => array(
+                    array(
+                        'field' => 'imgd_goto_top'
+                        , 'value' => 1
+                    )
+                )
+  ));
+
+/*
+* @todo: Image Field
+* @todo: Image Size?
+*/

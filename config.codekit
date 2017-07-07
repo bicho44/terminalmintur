@@ -1157,11 +1157,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/piklist\/parts\/settings\/vision-settings.php": {
+	"\/piklist\/parts\/settings\/theme-settings.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/piklist\/parts\/settings\/vision-settings.php",
+		"inputAbbreviatedPath": "\/piklist\/parts\/settings\/theme-settings.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
