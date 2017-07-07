@@ -1,0 +1,6 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.fontFamily": "'Open Source', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "emmet.useNewEmmet": true
+}

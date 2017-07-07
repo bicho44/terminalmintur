@@ -1,0 +1,190 @@
+//------- Colores RN
+@white: #fff;
+
+@rn-verde: rgb(141,198,63);
+
+@rn-verde-claro:rgb(189,214,48);
+@rn-verde-oscuro: rgb(152,201,60);
+
+@rn-celeste-mar: rgb(0,178,239);
+@rn-azul-mar: rgb(0,113,187);
+
+@rn-verde-cordillera: rgb(139,197,63);
+@rn-verde-oscuro-cordillera: rgb(101,148,46);
+
+@rn-marron-estepa: rgb(153,99,38);
+@rn-marron-oscuro-estepa: rgb(95,67,50);
+
+@rn-rojo-valle: rgb(175,17,22);
+@rn-rojo-oscuro-valle: rgb(138,3,4);
+
+//------------ Colores
+@color-fondo: @white;
+@color-fondo-contenido: #141414;
+@color-lineas: #232323;
+
+@background-color-theme: @color-fondo-contenido;
+
+//----- Colors Social
+@facebook-color: #0A246A;
+@twitter-color: #00a0d2;
+@youtube-color: #884000;
+@google-color: #9d1111;
+
+//--- Grises
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+//------------ Colores
+
+@brand-primary: 		@rn-verde;
+
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+//** Background color for `<body>`.
+@body-bg:             @color-fondo;
+
+//** Global text color on `<body>`.
+@text-color:            @gray-darker;
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 20%);
+
+//== Typography
+@OpenSans: 'Open Sans', sans-serif;
+@OpenSansCondesed: 'Open Sans Condensed', sans-serif;
+@Raleway: Raleway, sans-serif;
+@Roboto: 'Roboto', sans-serif;
+@Helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-headings: @Roboto;
+@font-Decorativa: 'Italianno', cursive;
+
+
+@font-family-sans-serif:  @OpenSans;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+//## Font, line-height, and color for body text, headings, and more.
+@font-texto: @OpenSans;
+
+@font-family-base:        @font-texto;
+
+//== Navbar
+
+// Basics of a navbar
+@navbar-height:                    70px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             0;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@navbar-default-color:             #fff;
+@navbar-default-bg:                @rn-verde;
+@navbar-default-border:            transparent;
+
+// Navbar links
+@navbar-default-link-color:                @navbar-default-color;
+@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-hover-bg:             lighten(@brand-primary, 15%);
+@navbar-default-link-active-color:         #fff;//@navbar-default-link-color;
+@navbar-default-link-active-bg:            lighten(@navbar-default-link-hover-bg, 10%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           lighten(@brand-primary, 20%);
+@navbar-default-toggle-icon-bar-bg:        darken(@brand-primary, 6.5%);
+@navbar-default-toggle-border-color:       lighten(@brand-primary, 20%);
+
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-headings;
+@headings-font-weight:    300;
+@headings-line-height:    1.2;
+@headings-color:          @gray-darker;
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    @navbar-default-bg;
+//** Dropdown menu `border-color`.
+@dropdown-border:                rgba(0,0,0,.15);
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            @navbar-default-link-color;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      @navbar-default-link-color;
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         @navbar-default-link-hover-bg;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color:   @gray-light;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @gray-light;
+
+//** Deprecated `@dropdown-caret-color` as of v3.1.0
+@dropdown-caret-color:           #000;
+
+
+//==== Footer Area
+@footer-border-color: @gray-light;
+@footer-border-size: 2px;
+@footer-margin-top: 20px;
+@footer-text-color: #fff;
+@footer-link-color: @footer-text-color;
+@footer-background-color: @gray-dark;
+
+//====== Social menu
+//@font-social-size: @font-size-large*1.3;
+
+@social-link-color: #fff;
+@social-link-hover-color: darken(@social-link-color, 30);
+@social-background-color: transparent;
+
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1080px;
+@screen-lg-min:              @screen-lg;
