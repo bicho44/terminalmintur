@@ -175,6 +175,12 @@ piklist (
         'field' => 'imgd_slider_full',
         'label' => __('Full Size Slider', 'imgd'),
         'description' => __('El SlideShow es Full Screen?', 'imgd'),
+        'conditions' => array(
+                        array(
+                            'field' => 'imgd_slider'
+                            , 'value' => 1
+                        )
+        ),
         'value' => 0,
         'attributes' => array(
             'class' => 'radio'
