@@ -18,7 +18,21 @@ animation:         KEYFRAME-NAME 5s infinite;
 }
 .page-template {
     &::before{
-        background: url('../images/header-back.png') no-repeat top left;
+        width: 100%;
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background-image: url('../images/header-back.png');
+        height: 300px;
+    }
+    &::after{
+        width: 100%;
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 150px;
+        background-image: url('../images/footer-back.png');
         height: 300px;
     }
 }
