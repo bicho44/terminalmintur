@@ -9,11 +9,17 @@
 */
 
 get_header(); ?>
-<?php
-while ( have_posts() ) : the_post();
-	the_content();
-endwhile; // End of the loop.
-?>
 
+<div id="primary" class="content-area container">
+	<div class="row">
+		<main id="main" class="site-main" role="main">
+			<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'template-parts/content', 'page' );
+			endwhile; // End of the loop.
+			?>
+		</main><!-- #main -->
+	</div><!-- Row -->
+</div><!-- #primary -->
 <?php
 get_footer();

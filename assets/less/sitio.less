@@ -16,26 +16,30 @@ animation:         KEYFRAME-NAME 5s infinite;
         color: @white;
     }
 }
-.page-template {
+.page-template,
+.page-template-default {
+    position: relative;
+    z-index: 1;
+
     &::before{
-        width: 100%;
         content: " ";
         position: absolute;
-        left: 0;
-        top: 80px;
-        background-image: url('../images/header-back.png');
-        background-repeat: no-repeat;
-        height: 300px;
+        width: 100%;
+        height: 90px;
+        top: 70px;
+        background-image: url(../images/header-back-repeat.png);
+        background-repeat: repeat-x;
+        opacity: .6;
     }
     &::after{
-        width: 100%;
         content: " ";
         position: absolute;
-        left: 0;
+        width: 100%;
+        background-position-x: center;
         bottom: 100px;
         background-image: url('../images/footer-back.png');
         background-repeat: no-repeat;
-        height: 300px;
+        opacity: .9;
     }
 }
 .info-city{

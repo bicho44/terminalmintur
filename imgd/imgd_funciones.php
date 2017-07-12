@@ -130,8 +130,11 @@ require get_template_directory() . '/imgd/imgd_link_navigation.php';
 //require get_template_directory() . '/imgd/imgd_pagination.php';
 //require get_template_directory() . '/inc/imgd/imgd_it_exchange.php';
 //require get_template_directory() . '/imgd/imgd_archive_order.php';
+
 require get_template_directory() . '/imgd/imgd_settings.php';
 //require get_template_directory() . '/inc/imgd/imgd_onepage_settings.php'; // Estas opciones estaban pensadas para el theme de onepagescroll
+
+require get_template_directory() . '/imgd/imgd_child_pages.php';
 
 require get_template_directory() . '/imgd/imgd_shortcode.php';
 require get_template_directory() . '/imgd/imgd_jetpack_mods.php';

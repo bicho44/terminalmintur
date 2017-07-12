@@ -10120,25 +10120,32 @@ animation:         KEYFRAME-NAME 5s infinite;
 .elementor-widget-container h2 {
   color: #fff;
 }
-.page-template::before {
-  width: 100%;
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 80px;
-  background-image: url('../images/header-back.png');
-  background-repeat: no-repeat;
-  height: 300px;
+.page-template,
+.page-template-default {
+  position: relative;
+  z-index: 1;
 }
-.page-template::after {
-  width: 100%;
+.page-template::before,
+.page-template-default::before {
   content: " ";
   position: absolute;
-  left: 0;
+  width: 100%;
+  height: 90px;
+  top: 70px;
+  background-image: url(../images/header-back-repeat.png);
+  background-repeat: repeat-x;
+  opacity: .6;
+}
+.page-template::after,
+.page-template-default::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  background-position-x: center;
   bottom: 100px;
   background-image: url('../images/footer-back.png');
   background-repeat: no-repeat;
-  height: 300px;
+  opacity: .9;
 }
 .info-city {
   padding: 15px;
