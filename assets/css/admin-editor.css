@@ -1199,6 +1199,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   left: 0;
   top: 80px;
   background-image: url('../images/header-back.png');
+  background-repeat: no-repeat;
   height: 300px;
 }
 .page-template::after {
@@ -1206,8 +1207,9 @@ animation:         KEYFRAME-NAME 5s infinite;
   content: " ";
   position: absolute;
   left: 0;
-  bottom: 150px;
+  bottom: 100px;
   background-image: url('../images/footer-back.png');
+  background-repeat: no-repeat;
   height: 300px;
 }
 .info-city {
