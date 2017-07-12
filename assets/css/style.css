@@ -10120,7 +10120,7 @@ animation:         KEYFRAME-NAME 5s infinite;
 .elementor-widget-container h2 {
   color: #fff;
 }
-.page::before {
+.page-template::before {
   background: url('../images/header-back.png') no-repeat top left;
   height: 300px;
 }
