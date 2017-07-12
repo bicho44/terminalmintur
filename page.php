@@ -14,9 +14,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area container">
-<div class="row">
-
+<div id="primary" class="content-area container">
+	<div class="row">
 		<main id="main" class="site-main col-md-8" role="main">
 			<?php
 			while ( have_posts() ) : the_post();
@@ -32,8 +31,8 @@ get_header(); ?>
 			?>
 		</main><!-- #main -->
 		<?php get_sidebar(); ?>
-		</div>
-	</div><!-- #primary -->
+	</div><!-- Row -->
+</div><!-- #primary -->
 
 <?php
 get_footer();

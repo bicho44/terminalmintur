@@ -112,6 +112,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/images\/footer-back.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5798,
+		"inputAbbreviatedPath": "\/assets\/images\/footer-back.png",
+		"outputAbbreviatedPath": "\/assets\/images\/footer-back.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/header-back.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6431,
+		"inputAbbreviatedPath": "\/assets\/images\/header-back.png",
+		"outputAbbreviatedPath": "\/assets\/images\/header-back.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/logo-header.png": {
 		"fileType": 32768,
 		"ignore": 0,

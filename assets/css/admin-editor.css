@@ -1192,6 +1192,10 @@ animation:         KEYFRAME-NAME 5s infinite;
 .elementor-widget-container h2 {
   color: #fff;
 }
+.page::before {
+  background: url('../images/header-back.png') no-repeat top left;
+  height: 300px;
+}
 .info-city {
   padding: 15px;
   border: 2px solid #8dc63f;

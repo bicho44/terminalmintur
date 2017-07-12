@@ -16,7 +16,12 @@ animation:         KEYFRAME-NAME 5s infinite;
         color: @white;
     }
 }
-
+.page {
+    &::before{
+        background: url('../images/header-back.png') no-repeat top left;
+        height: 300px;
+    }
+}
 .info-city{
     h3{
         color: @rn-rojo-oscuro-valle;
