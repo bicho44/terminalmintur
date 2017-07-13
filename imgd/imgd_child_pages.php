@@ -51,7 +51,7 @@ function get_imgd_child_grid($post_ID, $title="", $content=""){
             $tabs .= '<a href="'.get_the_permalink().'">';
 
 			if (has_post_thumbnail()){
-				$tabs.= get_the_post_thumbnail('thumb-archive');
+				$tabs .= get_the_post_thumbnail('thumb-archive');
 			}
 		    
             $tabs .= '<h2>'.get_the_title().'</h2>';

@@ -1192,6 +1192,24 @@ animation:         KEYFRAME-NAME 5s infinite;
 .elementor-widget-container h2 {
   color: #fff;
 }
+.valle,
+.cordillera,
+.estepa,
+.mar {
+  color: white;
+}
+.valle {
+  background-color: #af1116;
+}
+.cordillera {
+  background-color: #8bc53f;
+}
+.estepa {
+  background-color: #996326;
+}
+.mar {
+  background-color: #0071bb;
+}
 .page-template,
 .page-template-default {
   position: relative;
