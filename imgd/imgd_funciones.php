@@ -122,7 +122,9 @@ function if_mobile_get_me_this_class($class='', $echo='false'){
 require get_template_directory() . '/imgd/imgd_images_sizes.php';
 require get_template_directory() . '/imgd/imgd_gallery.php';
 require get_template_directory() . '/imgd/imgd_nav.php';
+
 require get_template_directory() . '/imgd/imgd_child_pages.php';
+
 require get_template_directory() . '/imgd/imgd_comment_bootstrap.php';
 require get_template_directory() . '/imgd/imgd_link_navigation.php';
 //require get_template_directory() . '/inc/meta-box/meta-box.php';// MetaBox functions
@@ -134,7 +136,6 @@ require get_template_directory() . '/imgd/imgd_link_navigation.php';
 require get_template_directory() . '/imgd/imgd_settings.php';
 //require get_template_directory() . '/inc/imgd/imgd_onepage_settings.php'; // Estas opciones estaban pensadas para el theme de onepagescroll
 
-require get_template_directory() . '/imgd/imgd_child_pages.php';
 
 require get_template_directory() . '/imgd/imgd_shortcode.php';
 require get_template_directory() . '/imgd/imgd_jetpack_mods.php';

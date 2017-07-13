@@ -13,7 +13,6 @@
  */
 function get_imgd_child_pages($post_ID)
 {
-
     $args = array(
         'post_type' => 'page',
         'posts_per_page' => -1,
@@ -21,8 +20,6 @@ function get_imgd_child_pages($post_ID)
         'order' => 'ASC',
         'orderby' => 'menu_order'
     );
-
-
     $parent = new WP_Query($args);
 
    return $parent;
@@ -52,11 +49,9 @@ function imgd_child_pages($post_ID, $title="", $content=""){
         /* Verifico que tenga la Tab principal */
         if ($title && $content !== ""){
             $header .= '<li class="active"><a href="#' . the_slug($post_ID) . '" data-toggle="tab">' . $title. '</a></li>';
-
             $tabs .= '<div id="' . the_slug($post_ID) . '" role="tabpanel" class="tab-pane active">';
             $tabs .= $content;
             $tabs .= '</div>';
-
         }
 
         while ($parent->have_posts()) : $parent->the_post();
