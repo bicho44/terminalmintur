@@ -1196,6 +1196,7 @@ animation:         KEYFRAME-NAME 5s infinite;
 .cordillera,
 .estepa,
 .mar {
+  padding-top: 16px;
   color: white;
 }
 .valle h1,
@@ -1220,8 +1221,23 @@ animation:         KEYFRAME-NAME 5s infinite;
 .mar h5 {
   color: white;
 }
+.valle a,
+.cordillera a,
+.estepa a,
+.mar a {
+  color: white;
+}
+.valle a:hover,
+.cordillera a:hover,
+.estepa a:hover,
+.mar a:hover {
+  text-decoration: none;
+}
 .valle {
   background-color: #af1116;
+}
+.valle:hover {
+  background-color: #8a0304;
 }
 .cordillera {
   background-color: #8bc53f;
