@@ -55,7 +55,7 @@ function get_imgd_child_grid($post_ID, $title="", $content=""){
 			}
 		    
             $tabs .= '<h2>'.get_the_title().'</h2>';
-            $tabs .= apply_filters('the_content',get_the_content());
+            //$tabs .= apply_filters('the_content',get_the_content());
             $tabs .= '</a>';
             $tabs .= '</div>';
 
