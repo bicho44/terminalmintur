@@ -25,6 +25,49 @@ function get_imgd_child_pages($post_ID)
    return $parent;
 }
 
+
+function imgd_child_grid($post_ID, $title="", $content=""){
+    echo get_imgd_child_grid($post_ID, $title="", $content="");
+}
+
+function get_imgd_child_grid($post_ID, $title="", $content=""){
+    $parent = get_imgd_child_pages($post_ID);
+
+    $grid = "";
+
+    if ($parent->have_posts()) {
+
+        /* Verifico que tenga la Tab principal */
+        if ($title && $content !== ""){
+            $header .= '<li class="active"><a href="#' . the_slug($post_ID) . '" data-toggle="tab">' . $title. '</a></li>';
+            $tabs .= '<div id="' . the_slug($post_ID) . '" role="tabpanel" class="tab-pane active">';
+            $tabs .= $content;
+            $tabs .= '</div>';
+        }
+
+        while ($parent->have_posts()) : $parent->the_post();
+            
+            $tabs .= '<div id="' . the_slug(get_the_ID()) . '" role="panel" class="col-md-3">';
+            
+			if (has_post_thumbnail()){
+				$tabs.= get_the_post_thumbnail('thumb-archive');
+			}
+		    
+            $tabs .= '<h2>'.get_the_title().'</h2>';
+            $tabs .= apply_filters('the_content',get_the_content());
+            $tabs .= '</div>';
+
+        endwhile;
+
+        wp_reset_query();
+
+        return $tabs;
+
+    } else {
+        return;
+    }
+}
+
 /**
  * Obtengo los Tabs formateados para Bootstrap 3.x
  *
