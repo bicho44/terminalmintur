@@ -1198,6 +1198,28 @@ animation:         KEYFRAME-NAME 5s infinite;
 .mar {
   color: white;
 }
+.valle h1,
+.cordillera h1,
+.estepa h1,
+.mar h1,
+.valle h2,
+.cordillera h2,
+.estepa h2,
+.mar h2,
+.valle h3,
+.cordillera h3,
+.estepa h3,
+.mar h3,
+.valle h4,
+.cordillera h4,
+.estepa h4,
+.mar h4,
+.valle h5,
+.cordillera h5,
+.estepa h5,
+.mar h5 {
+  color: white;
+}
 .valle {
   background-color: #af1116;
 }
