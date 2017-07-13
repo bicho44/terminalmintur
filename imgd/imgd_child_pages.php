@@ -47,7 +47,7 @@ function get_imgd_child_grid($post_ID, $title="", $content=""){
 
         while ($parent->have_posts()) : $parent->the_post();
             
-            $tabs .= '<div id="' . the_slug(get_the_ID()) . '" role="panel" class="grid-panel col-md-3">';
+            $tabs .= '<div id="' . the_slug(get_the_ID()) . '" role="panel" class="'.the_slug(get_the_ID()).' grid-panel col-md-3">';
             $tabs .= '<a href="'.get_the_permalink().'">';
 
 			if (has_post_thumbnail()){
