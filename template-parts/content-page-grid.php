@@ -22,19 +22,19 @@
 			if (has_post_thumbnail()){
 				the_post_thumbnail('show-cropped');
 			}
-		 ?>
-		 </div>
+		?>
+		<?php require( locate_template( 'template-parts/carrousel/carrousel-owl2.php' ) );?>
+		</div>
 		 <div class="col-md-6">
 			<?php
 				the_content();
 			?>
 		</div>
 		<?php
-			echo wpdocs_custom_taxonomies_terms_links();
-
+			//echo wpdocs_custom_taxonomies_terms_links();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'turismointer' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'imgd' ),
 				'after'  => '</div>',
 			) );
 		?>

@@ -23,6 +23,20 @@
 
 
 (function(){
+
+    $("#SlideShow").owlCarousel({
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        loop: true,
+        autoplay: true,
+        items:1
+
+    });
+
+
+}());
+
+(function(){
   $(window).scroll(function () {
       if ( $(this).scrollTop() > 300 )
           $("#totop").fadeIn();

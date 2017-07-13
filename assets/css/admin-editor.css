@@ -1195,7 +1195,9 @@ animation:         KEYFRAME-NAME 5s infinite;
 .valle,
 .cordillera,
 .estepa,
-.mar {
+.mar,
+.alto-valle,
+.valle-medio {
   padding-top: 16px;
   color: white;
 }
@@ -1203,34 +1205,48 @@ animation:         KEYFRAME-NAME 5s infinite;
 .cordillera h1,
 .estepa h1,
 .mar h1,
+.alto-valle h1,
+.valle-medio h1,
 .valle h2,
 .cordillera h2,
 .estepa h2,
 .mar h2,
+.alto-valle h2,
+.valle-medio h2,
 .valle h3,
 .cordillera h3,
 .estepa h3,
 .mar h3,
+.alto-valle h3,
+.valle-medio h3,
 .valle h4,
 .cordillera h4,
 .estepa h4,
 .mar h4,
+.alto-valle h4,
+.valle-medio h4,
 .valle h5,
 .cordillera h5,
 .estepa h5,
-.mar h5 {
+.mar h5,
+.alto-valle h5,
+.valle-medio h5 {
   color: white;
 }
 .valle a,
 .cordillera a,
 .estepa a,
-.mar a {
+.mar a,
+.alto-valle a,
+.valle-medio a {
   color: white;
 }
 .valle a:hover,
 .cordillera a:hover,
 .estepa a:hover,
-.mar a:hover {
+.mar a:hover,
+.alto-valle a:hover,
+.valle-medio a:hover {
   text-decoration: none;
 }
 .valle {
@@ -1242,11 +1258,20 @@ animation:         KEYFRAME-NAME 5s infinite;
 .cordillera {
   background-color: #8bc53f;
 }
+.cordillera:hover {
+  background-color: #65942e;
+}
 .estepa {
   background-color: #996326;
 }
+.estepa:hover {
+  background-color: #5f4332;
+}
 .mar {
   background-color: #0071bb;
+}
+.mar:hover {
+  background-color: #005288;
 }
 .page-template,
 .page-template-default {

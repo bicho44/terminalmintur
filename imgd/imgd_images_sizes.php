@@ -115,9 +115,9 @@ if(!function_exists('imgd_has_slideshow_thumbnail')) {
      * @param null $post
      * @return bool
      */
-    function imgd_has_slideshow_thumbnail($post = null)
+    function imgd_has_slideshow_thumbnail($post = null, $field='imgd_image_slideshow')
     {
-        return (bool)imgd_get_slideshow_thumbnail_id($post);
+        return (bool)imgd_get_slideshow_thumbnail_id($post, $field);
     }
 }
 
@@ -132,13 +132,13 @@ if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	 * @return string|int Post thumbnail ID or empty string.
 	 */
 
-	function imgd_get_slideshow_thumbnail_id($post = null)
+	function imgd_get_slideshow_thumbnail_id($post = null, $field='imgd_image_slideshow')
 	{
 		$post = get_post($post);
 		if (!$post) {
-			return '';
+			return false;
 		}
-		return get_post_meta($post->ID, 'imgd_image_slideshow', true);
+		return get_post_meta($post->ID, $field);
 	}
 }
 

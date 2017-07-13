@@ -17,11 +17,13 @@ animation:         KEYFRAME-NAME 5s infinite;
     }
 }
 
-.valle, .cordillera, .estepa, .mar {
+.valle, .cordillera, .estepa, .mar,
+.alto-valle, .valle-medio {
     padding-top: 16px;
     color: white;
 
     h1,h2,h3,h4,h5{color:white;}
+
     a {
         &:hover{text-decoration: none;}
         color: white;
@@ -36,12 +38,21 @@ animation:         KEYFRAME-NAME 5s infinite;
 }
 .cordillera {
     background-color: @rn-verde-cordillera;
+    &:hover{
+        background-color: @rn-verde-oscuro-cordillera;
+    }
 }
 .estepa {
     background-color: @rn-marron-estepa;
+    &:hover{
+        background-color: @rn-marron-oscuro-estepa
+    }
 }
 .mar {
     background-color: @rn-azul-mar;
+    &:hover{
+        background-color: darken(@rn-azul-mar, 10%);
+    }
 }
 
 .page-template,
