@@ -10154,6 +10154,9 @@ animation:         KEYFRAME-NAME 5s infinite;
 .info-city h3 {
   color: #8a0304;
 }
+.grid-panel {
+  height: 200px;
+}
 .navbar {
   margin-bottom: 0;
 }

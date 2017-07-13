@@ -47,14 +47,16 @@ function get_imgd_child_grid($post_ID, $title="", $content=""){
 
         while ($parent->have_posts()) : $parent->the_post();
             
-            $tabs .= '<div id="' . the_slug(get_the_ID()) . '" role="panel" class="col-md-3">';
-            
+            $tabs .= '<div id="' . the_slug(get_the_ID()) . '" role="panel" class="grid-panel col-md-3">';
+            $tabs .= '<a href="'.get_the_permalink().'">';
+
 			if (has_post_thumbnail()){
 				$tabs.= get_the_post_thumbnail('thumb-archive');
 			}
 		    
             $tabs .= '<h2>'.get_the_title().'</h2>';
             $tabs .= apply_filters('the_content',get_the_content());
+            $tabs .= '</a>';
             $tabs .= '</div>';
 
         endwhile;
