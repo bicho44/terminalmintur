@@ -43,6 +43,7 @@ function custom_image_sizes_choose( $sizes ) {
     $custom_sizes = array(
         'featured-image' => 'Featured Image'
 		,'show-cropped' => 'Show Cropped'
+		.'news-archive' => 'News Archive'
 		,'thumb-archive' => 'Thumb Archive'
     );
     return array_merge( $sizes, $custom_sizes );
