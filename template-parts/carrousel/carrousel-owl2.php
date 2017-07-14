@@ -48,9 +48,9 @@ if (imgd_has_slideshow_thumbnail(get_the_ID(),'imgd_slideshow_images')) {
 
    
 
-} else {
+} /*else {
     echo 'Test SlideShow false '. imgd_has_slideshow_thumbnail(get_the_ID(),'imgd_slideshow_images');
-}
+}*/
 
 
 //<!-- end loop SlideShow -->

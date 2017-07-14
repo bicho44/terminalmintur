@@ -20,10 +20,14 @@
 		<div class="col-md-6">
 		<?php
 			if (has_post_thumbnail()){
-				the_post_thumbnail('show-cropped');
+				
+				if(imgd_has_slideshow_thumbnail(get_the_ID(),'imgd_slideshow_images')){
+					require( locate_template( 'template-parts/carrousel/carrousel-owl2.php' ) );
+				} else {
+					the_post_thumbnail('show-cropped');
+				}
 			}
 		?>
-		<?php require( locate_template( 'template-parts/carrousel/carrousel-owl2.php' ) );?>
 		</div>
 		 <div class="col-md-6">
 			<?php

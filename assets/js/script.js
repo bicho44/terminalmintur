@@ -30,7 +30,6 @@
         loop: true,
         autoplay: true,
         items:1
-
     });
 
 
