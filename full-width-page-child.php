@@ -19,8 +19,12 @@ get_header(); ?>
 				?>
 				<?php
 				//echo "ID=".get_the_ID();
+				$parent = get_imgd_child_pages($post_ID);
 
-				imgd_child_grid(get_the_ID());
+				if($parent->have_posts()){
+					imgd_child_grid(get_the_ID());
+				}
+				
 			endwhile; // End of the loop.
 			?>
 		</main><!-- #main -->

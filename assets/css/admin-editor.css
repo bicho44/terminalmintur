@@ -1287,7 +1287,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   top: 70px;
   background-image: url(../images/header-back-repeat.png);
   background-repeat: repeat-x;
-  opacity: .6;
+  opacity: .4;
 }
 .page-template::after,
 .page-template-default::after {

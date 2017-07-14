@@ -10,18 +10,10 @@ $carrousel ='';
 
 // Verifico que la noticia tenga imágen
 if (imgd_has_slideshow_thumbnail(get_the_ID(),'imgd_slideshow_images')) {
-
     $class = "item";
-
-    
-
     /* Obtengo el URL de la imagen principal */
     $post_thumbnail_ids = imgd_get_slideshow_thumbnail_id(get_the_ID(), 'imgd_slideshow_images');
-
-   
-
     if($post_thumbnail_ids){
-        
 
         foreach($post_thumbnail_ids as $key=>$val)
         {
@@ -36,9 +28,9 @@ if (imgd_has_slideshow_thumbnail(get_the_ID(),'imgd_slideshow_images')) {
 
         //$html = wp_get_attachment_image_src($post_thumbnail_id, $slider_size );
 
-    } else {
+    } /*else {
         echo '<h1>'.$post_thumbnail_ids.'</h1>';
-    }
+    }*/
 
     /*$carrousel .='<div class="carousel-caption">';
 
