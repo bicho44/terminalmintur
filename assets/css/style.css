@@ -10077,7 +10077,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   top: 10px;
   right: 0;
   left: 0;
-  z-index: 500;
+  /*z-index: 500;*/
 }
 .elementor-widget-container h2 {
   color: #fff;
@@ -10086,39 +10086,52 @@ animation:         KEYFRAME-NAME 5s infinite;
 .cordillera,
 .estepa,
 .mar,
+.cerro-catedral,
+.ruta-del-vino,
 .alto-valle,
 .valle-medio {
   padding-top: 16px;
+  padding-bottom: 16px;
   color: white;
 }
 .valle h1,
 .cordillera h1,
 .estepa h1,
 .mar h1,
+.cerro-catedral h1,
+.ruta-del-vino h1,
 .alto-valle h1,
 .valle-medio h1,
 .valle h2,
 .cordillera h2,
 .estepa h2,
 .mar h2,
+.cerro-catedral h2,
+.ruta-del-vino h2,
 .alto-valle h2,
 .valle-medio h2,
 .valle h3,
 .cordillera h3,
 .estepa h3,
 .mar h3,
+.cerro-catedral h3,
+.ruta-del-vino h3,
 .alto-valle h3,
 .valle-medio h3,
 .valle h4,
 .cordillera h4,
 .estepa h4,
 .mar h4,
+.cerro-catedral h4,
+.ruta-del-vino h4,
 .alto-valle h4,
 .valle-medio h4,
 .valle h5,
 .cordillera h5,
 .estepa h5,
 .mar h5,
+.cerro-catedral h5,
+.ruta-del-vino h5,
 .alto-valle h5,
 .valle-medio h5 {
   color: white;
@@ -10127,6 +10140,8 @@ animation:         KEYFRAME-NAME 5s infinite;
 .cordillera a,
 .estepa a,
 .mar a,
+.cerro-catedral a,
+.ruta-del-vino a,
 .alto-valle a,
 .valle-medio a {
   color: white;
@@ -10135,6 +10150,8 @@ animation:         KEYFRAME-NAME 5s infinite;
 .cordillera a:hover,
 .estepa a:hover,
 .mar a:hover,
+.cerro-catedral a:hover,
+.ruta-del-vino a:hover,
 .alto-valle a:hover,
 .valle-medio a:hover {
   text-decoration: none;
@@ -10198,7 +10215,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   color: #8a0304;
 }
 .grid-panel {
-  height: 200px;
+  height: 232px;
 }
 .navbar {
   margin-bottom: 0;
