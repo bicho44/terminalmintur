@@ -249,3 +249,16 @@ function get_image_height( $size ) {
 }
 
 }
+
+/**
+* Custom image sizes in media uploader
+*
+* @link: https://code.tutsplus.com/tutorials/using-custom-image-sizes-in-your-theme-and-resizing-existing-images--wp-24815
+*/
+add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
+function custom_image_sizes_choose( $sizes ) {
+    $custom_sizes = array(
+        'featured-image' => 'Featured Image'
+    );
+    return array_merge( $sizes, $custom_sizes );
+}

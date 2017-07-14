@@ -10156,6 +10156,18 @@ animation:         KEYFRAME-NAME 5s infinite;
 .valle-medio a:hover {
   text-decoration: none;
 }
+.cerro-catedral {
+  background-color: #00b2ef;
+}
+.cerro-catedral:hover {
+  background-color: #008cbc;
+}
+.ruta-del-vino {
+  background-color: #00b2ef;
+}
+.ruta-del-vino:hover {
+  background-color: #008cbc;
+}
 .valle {
   background-color: #af1116;
 }
