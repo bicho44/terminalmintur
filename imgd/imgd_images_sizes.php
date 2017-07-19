@@ -17,7 +17,7 @@ add_image_size('full-cropped', 1150, 480, true);
 
 add_image_size('header-cropped', 1150, 300, true, array( 'center', 'top' ) );
 
-add_image_size('show-cropped', 580, 300, true);
+add_image_size('show-cropped', 900, 500, true);
 add_image_size('show-archive', 750, 200, true);
 
 add_image_size('news-featured', 750, 420, true);
