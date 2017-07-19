@@ -46,6 +46,7 @@ function custom_image_sizes_choose( $sizes ) {
 		,'news-archive' => 'News Archive'
 		,'thumb-archive' => 'Thumb Archive'
     );
+	
     return array_merge( $sizes, $custom_sizes );
 }
 

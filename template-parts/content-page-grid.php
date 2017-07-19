@@ -17,7 +17,7 @@
 
 	<div class="entry-content row">
 		
-		<div class="col-md-6">
+		<div class="col-md-9">
 		<?php
 			if (has_post_thumbnail()){
 				
@@ -29,7 +29,7 @@
 			}
 		?>
 		</div>
-		 <div class="col-md-6">
+		 <div class="col-md-3">
 			<?php
 				the_content();
 			?>
