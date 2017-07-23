@@ -21,5 +21,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- Row -->
 </div><!-- #primary -->
-<?php
-get_footer();
+<?php get_footer();?>

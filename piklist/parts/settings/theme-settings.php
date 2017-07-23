@@ -310,3 +310,29 @@ piklist('field', array(
             ,'no' => __('No', 'imgd')
         )
 ));
+
+// Mostrar el Menu Social en el Menú Princiap
+piklist('field', array(
+    'type' => 'radio'
+    ,'field' => 'imgd_show_social_in_primary_menu'
+    ,'label' => __('Mostrar el Menu Social en el Menú principal', 'imgd')
+    ,'value' => 0,
+    'description'=>__('Muestra el Menú con los íconos Sociales en el menú principal','imgd')
+    ,'choices' => array(
+            1 => __('Si', 'imgd')
+            ,0 => __('No', 'imgd')
+        )
+));
+
+// Mostrar el Footer
+piklist('field', array(
+    'type' => 'radio'
+    ,'field' => 'imgd_show_footer'
+    ,'label' => __('Mostrar el Footer', 'imgd')
+    ,'value' => 0,
+    'description'=>__('Muestra el footer en todas las páginas o no','imgd')
+    ,'choices' => array(
+            1 => __('Si', 'imgd')
+            ,0 => __('No', 'imgd')
+        )
+));

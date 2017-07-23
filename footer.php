@@ -8,6 +8,12 @@
  *
  * @package Turismo_InterOceánico
  */
+	if (!isset($opciones_imgd)){
+		$opciones_imgd=get_option( 'opciones_imgd' );
+	}
+ ?>
+<?php if ($opciones_imgd['imgd_show_footer'][0]!=0){
+
 $class="align-right";
 ?>
 	<div class="wrapfooter">
@@ -41,8 +47,10 @@ $class="align-right";
 			</div>
 		</div>
 	</div> <!-- #wrapfooter -->
+<?php } //End Check Show Footer ?>
+
+</div><!-- end Page -->
 
 <?php wp_footer(); ?>
-</div><!-- end Page -->
 </body>
 </html>

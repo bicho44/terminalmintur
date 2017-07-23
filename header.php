@@ -25,5 +25,17 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'filmarte' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<?php get_template_part('template-parts/menu','bootstrap'); ?>
+<?php
+	if (!isset($opciones_imgd)){
+		$opciones_imgd=get_option( 'opciones_imgd' );
+	}
+ ?>
+<?php
+	if ($opciones_imgd['imgd_show_social_in_primary_menu'][0]!=0){
+		get_template_part('template-parts/menu','bootstrap-con-social'); 
+	} else {
+		get_template_part('template-parts/menu','bootstrap'); 
+	}
+?>
+
 	</header><!-- #masthead -->

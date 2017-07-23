@@ -1,4 +1,9 @@
 <?php
+$fontsGoogle = '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto';
+
+/** Definir el largo de los excerpt */
+define('POST_EXCERPT_LENGTH', 55);
+
 /**
  * Jquery enqueue
  * @package: IMGD Framework
@@ -12,7 +17,7 @@ function load_external_jQuery() {
 
 // Check to make sure Google's library is available
 	$link = '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
-	$try_url = @fopen("http://".$link,'r');
+	$try_url = @fopen("http:".$link,'r');
 	if( $try_url !== false ) {
 		// If it's available, get it registered
 		wp_register_script('jquery', $link, false, null, true);
@@ -23,8 +28,6 @@ function load_external_jQuery() {
 	// Get it enqueued
 	wp_enqueue_script('jquery');
 }
-
-$fontsGoogle = '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto';
 
 /**
  * Enqueue scripts and styles.
@@ -50,10 +53,6 @@ function imgdigital_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'imgdigital_scripts', 20 );
-
-
-/** Definir el largo de los excerpt */
-define('POST_EXCERPT_LENGTH', 55);
 
 /** Enable to load jQuery from the Google CDN */
 //add_theme_support('jquery-cdn');
