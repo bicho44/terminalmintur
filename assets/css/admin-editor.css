@@ -1189,7 +1189,7 @@ animation:         KEYFRAME-NAME 5s infinite;
   left: 0;
   /*z-index: 500;*/
 }
-.page {
+body.home > .content-area {
   min-height: 940px;
 }
 .elementor-widget-container h2 {
