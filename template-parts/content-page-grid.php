@@ -36,11 +36,11 @@
 		</div>
 		<?php
 
-			wp_link_pages( array(
+			echo wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'imgd' ),
 				'after'  => '</div>',
 			) );
-			
+
 		?>
 	</div><!-- .entry-content -->
 
