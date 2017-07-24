@@ -17,10 +17,10 @@ function load_external_jQuery() {
 
 // Check to make sure Google's library is available
 	$link = 'ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
-	$try_url = @fopen("https://".$link,'r');
+	$try_url = @fopen("http://".$link,'r');
 	if( $try_url !== false ) {
 		// If it's available, get it registered
-		wp_register_script('jquery', $link, false, null, true);
+		wp_register_script('jquery',$try_url, false, null, true);
 	} else {
 		// Register the local file if CDN fails
 		wp_register_script('jquery', get_template_directory_uri().'/assets/js/vendor/jquery.min.js', __FILE__, false, '2.2.4', true);
