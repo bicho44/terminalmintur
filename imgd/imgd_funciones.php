@@ -16,8 +16,8 @@ function load_external_jQuery() {
 	wp_deregister_script( 'jquery' );
 
 // Check to make sure Google's library is available
-	$link = '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
-	$try_url = @fopen("http:".$link,'r');
+	$link = 'ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
+	$try_url = @fopen("https://".$link,'r');
 	if( $try_url !== false ) {
 		// If it's available, get it registered
 		wp_register_script('jquery', $link, false, null, true);
