@@ -302,12 +302,12 @@ piklist('field', array(
 piklist('field', array(
     'type' => 'radio'
     ,'field' => 'imgd_magic_tabs'
-    ,'label' => __('Tabs Automáticas', 'imgd')
-    ,'value' => 'no',
-        'description'=>__('Esta opción transforma las páginas "hijas" en Tabs','imgd')
+    ,'label' => __('Grilla hijos Automáticas', 'imgd')
+    ,'value' => 0,
+        'description'=>__('Esta opción transforma las páginas "hijas" en una grilla','imgd')
     ,'choices' => array(
-            'si' => __('Si', 'imgd')
-            ,'no' => __('No', 'imgd')
+            1 => __('Si', 'imgd')
+            ,0 => __('No', 'imgd')
         )
 ));
 

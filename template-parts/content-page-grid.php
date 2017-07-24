@@ -35,8 +35,6 @@
 			?>
 		</div>
 		<?php
-			wp_bs_pagination();
-
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'imgd' ),
 				'after'  => '</div>',
