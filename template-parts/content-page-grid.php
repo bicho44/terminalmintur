@@ -35,12 +35,12 @@
 			?>
 		</div>
 		<?php
-			//echo wpdocs_custom_taxonomies_terms_links();
+			wp_bs_pagination();
 
-			wp_link_pages( array(
+			/*wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'imgd' ),
 				'after'  => '</div>',
-			) );
+			) );*/
 		?>
 	</div><!-- .entry-content -->
 
