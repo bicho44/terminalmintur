@@ -35,12 +35,12 @@
 			?>
 		</div>
 		<?php
+			wp_bs_pagination();
 
-			echo wp_link_pages( array(
+			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'imgd' ),
 				'after'  => '</div>',
 			) );
-
 		?>
 	</div><!-- .entry-content -->
 
